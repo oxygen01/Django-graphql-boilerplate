@@ -1,0 +1,18 @@
+[
+  {
+    "model": "links.link",
+    "pk": 1,
+    "fields": {
+      "url": "https://www.howtographql.com/",
+      "description": "The Fullstack Tutorial for GraphQL"
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 2,
+    "fields": {
+      "url": "http://shoukhi.bplaced.net/",
+      "description": "Ibrahim Taalouou cv"
+    }
+  }
+]
