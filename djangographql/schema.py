@@ -4,18 +4,20 @@ import graphql_jwt
 import links.schemes.link.query
 import links.schemes.link.relay_query
 import links.schemes.link.mutation
+import links.schemes.link.relay_mutation
 import users.schemes.user.mutation
 import users.schemes.user.query
 
 
 class Query(links.schemes.link.query.Query,
-            links.schemes.link.relay_query.RelayQuery,
+            links.schemes.link.relay_query.Query,
             users.schemes.user.query.Query,
             graphene.ObjectType):
     pass
 
 
 class Mutation(links.schemes.link.mutation.Mutation,
+               links.schemes.link.relay_mutation.Mutation,
                users.schemes.user.mutation.Mutation,
                graphene.ObjectType):
     token_auth = graphql_jwt.ObtainJSONWebToken.Field() # use it to login
