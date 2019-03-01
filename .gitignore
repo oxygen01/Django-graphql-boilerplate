@@ -1,0 +1,7 @@
+./data
+djangographql/__pycache__
+links/__pycache__
+links/migrations/__pycache__
+links/schemes/__pycache__
+links/schemes/link/__pycache__
+users/schemes/user/__pycache__
