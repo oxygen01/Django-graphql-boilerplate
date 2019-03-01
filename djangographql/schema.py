@@ -2,12 +2,14 @@ import graphene
 import graphql_jwt
 
 import links.schemes.link.query
+import links.schemes.link.relay_query
 import links.schemes.link.mutation
 import users.schemes.user.mutation
 import users.schemes.user.query
 
 
 class Query(links.schemes.link.query.Query,
+            links.schemes.link.relay_query.RelayQuery,
             users.schemes.user.query.Query,
             graphene.ObjectType):
     pass
